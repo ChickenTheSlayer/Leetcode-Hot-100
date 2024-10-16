@@ -9,7 +9,7 @@ class Solution:
             if l2:
                 carry += l2.val
                 l2 = l2.next
-            cur.next = ListNode(carry%10)
+            cur.next = ListNode(carry%10) #store remainder
             cur = cur.next
             carry //=10
         return dummy.next
